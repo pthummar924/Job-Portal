@@ -45,6 +45,7 @@ public class AddPostServlet extends HttpServlet {
 				resp.sendRedirect("add_job.jsp");
 			}
 		} catch(Exception e) {
+			System.out.println(e.getMessage());
 			e.printStackTrace();
 		}
 	}
